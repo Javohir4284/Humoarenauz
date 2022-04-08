@@ -338,8 +338,11 @@
   }
 
   .spiker {
-    h1 {
-      font-size: 30px !important;
+
+    &-info{
+      h1 {
+        font-size: 30px!important;
+      }
     }
     .spikers {
       &-item {
@@ -483,14 +486,22 @@
   .spiker {
     .spikers {
       &-item {
-        .logo {
-          display: none;
+        .logo{
+          height: 40px !important;
+        }
+
+        .profil{
+          h3{
+            left: 5px !important;
+            bottom: 0 !important; 
+            font-size: 12px !important;
+          }
         }
       }
     }
     &-bottom {
       h2 {
-        font-size: 22px !important;
+        font-size: 24px !important;
       }
     }
   }
