@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humo Arena</title>
+
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-nav">
+            <div class="logo">МЕГАТРЕНИНГ <span>22</span></div>
+            <div class="navbar-place">
+              <img src="/assets/icons/calendar.svg" alt="" />
+              <p id="thatday">1-2 июнь</p>
+
+              <img src="/assets/icons/map-marker.svg" alt="" />
+              <p id="locate">Humo Arena, Ташкент</p>
+            </div>
+          </div>
+          <form class="navbar-form">
+            <div class="fixedbtn">
+              <button class="button blue shine" id="buyTicket"> </button>
+              
+            </div>
+            <img id="language" src="" height="30px" , width="30px" />
+          </form>
+        </div>
+        <div class="navbar-place-none">
+          <div>
+            <img src="/assets/icons/calendar.svg" alt="" />
+            <p id="thatDay">1-2 июнь</p>
+          </div>
+
+          <div>
+            <img src="/assets/icons/map-marker.svg" alt="" />
+            <p id="location">Humo Arena, Ташкент</p>
+          </div>
+        </div>
+      </nav>
+
+      <main class="main">
+        <div class="container">
+          <div class="main-info">
+            <h1>МЕГАТРЕНИНГ 20<span>22</span></h1>
+            <p id="mainText">
+              Ўзбекистонда <span>илк бора</span> бизнесда реклама, сотув ва
+              системалаштиришга оид бўлган халқаро бизнес форум
+            </p>
+            <button id="bronbtn">Жойни банд қилиш</button>
+          </div>
+
+          <div class="form" id="form">
+            <div class="modalHead">
+              <div class="modal" id="modal">
+                <div class="cancel">
+                  <a href="#"
+                    ><img
+                      src="/assets/icons/cancel.svg"
+                      id="cancel"
+                      alt="cancel"
+                  /></a>
+                </div>
+                <h1>Формани тўлдиринг</h1>
+                <form>
+                  <div class="name">
+                    <label for="">Исмингиз</label>
+                    <input type="text " placeholder="Исмингиз" />
+                  </div>
+                  <div class="tel">
+                    <label for="">Телефон рақам</label>
+                    <input type="text" placeholder="+" />
+                  </div>
+                  <div class="type">
+                    <img src="/assets/icons/triangle.svg" alt="tringle" />
+                    <label for="">Фаолият тури</label>
+                    <select name="" id="" aria-placeholder="Танланг">
+                      <option value="">Танланг</option>
+                    </select>
+                  </div>
+                  <button id="pay">Жойни банд қилиш</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment" id="payment">
+            <div class="wrapper">
+              <div class="display"></div>
+
+              <div>
+                <div id="biznes"></div>
+              </div>
+
+              <hr />
+              <div class="final">
+                <h1>Тадбиркор</h1>
+                <div class="res">40$</div>
+              </div>
+
+              <button id="lastbtn" type="button">Тўловни амалга ошириш</button>
+            </div>
+          </div>
+
+          <div class="main-card">
+            <div class="ticket">
+              <img src="/assets/icons/ticket.svg" alt="ticket" />
+            </div>
+            <div class="info">
+              <h4 id="aksiyaLineOne">Акция 10 майгача.</h4>
+              <h4 id="aksiyaLineTwo"><span>1 та билет</span> харид қилин</h4>
+              <h4 id="aksiyaLineThree">
+                2 чисига <span>мутлақо бепул</span> эга бўлинг
+              </h4>
+            </div>
+            <div class="time">
+              <p id="endAksiya">Акция вақти тугамоқда:</p>
+
+              <div class="get-time">
+                <div class="day">
+                  <h2 id="day">00</h2>
+                  <p id="dayAksiya">кун</p>
+                </div>
+                <span>:</span>
+                <div class="hour">
+                  <h2 id="hour">00</h2>
+                  <p id="hourAksiya">соат</p>
+                </div>
+                <span>:</span>
+                <div class="minut">
+                  <h2 id="min">00</h2>
+                  <p id="minAksiya">дақиқа</p>
+                </div>
+                <span>:</span>
+                <div class="secund">
+                  <h2 id="sec">00</h2>
+                  <p id="secAksiya">сония</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </header>
+    <!-- Header finished -->
+
+    <!-- Section-one started -->
+    <section class="section">
+      <div class="container">
+        <div class="section-left">
+          <img src="/assets/images/main.png" alt="mainimg" />
+          <div class="border"></div>
+        </div>
+
+        <div class="section-right">
+          <h1 id="megaTrening">
+            МЕГАТРЕНИНГ 20<span>22 га ХУШ КЕЛИБСИЗ !</span>
+          </h1>
+          <p id="bussiness">
+            Тадбиркор, топ-менеджер ва маркетологларни бирлаштирувчи халқаро
+            миқёсдаги бизнес форум
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Section-one finished -->
+
+    <!-- statistic started -->
+    <div class="statistic">
+      <img src="/assets/icons/stat1.png" alt="stat1" class="stat1" />
+      <img src="/assets/icons/stat2.png" alt="stat2" class="stat2" />
+      <img src="/assets/icons/ellips1.png" alt="ellips1" class="ellips1" />
+      <img src="/assets/icons/ellips2.png" alt="ellips2" class="ellips2" />
+      <div class="container">
+        <div class="cards">
+          <div class="card">
+            <h2 class="card-number">10000+</h2>
+            <p id="bussinessman">Бизнес эгалари ва топ менеджерлар</p>
+          </div>
+          <div class="card">
+            <h2 class="card-number">12</h2>
+            <p id="speaker">Xалқаро бизнес-спикерлар</p>
+          </div>
+          <div class="card">
+            <h2 class="card-number">2</h2>
+            <p id="tools">Фақат бизнес ривожланиши учун инструментлар</p>
+          </div>
+        </div>
+        <form>
+          <button id="buyTicketTwo" type="button">Чипта ҳарид қилиш</button>
+        </form>
+      </div>
+    </div>
+    <!-- statistic finished -->
+
+    <div class="spiker">
+      <div class="container">
+        <div class="spiker-info">
+          <h1 id="international">
+            12 та халқаро ва махаллий бизнес <span>спикерлар</span>
+          </h1>
+        </div>
+        <div class="spikers">
+          <div class="spikers-item">
+            <div class="profil">
+              <h3>Шамиль Аляутдинов</h3>
+              <img src="/assets/icons/shadow.png" alt="" class="shadow">
+              <img src="/assets/images/spiker.jpg" alt="portret" />
+            </div>
+            <div class="logo">
+              <img src="/assets/images/company.svg" alt="company">
+            </div>
+          </div>
+
+          <div class="spikers-item">
+            <div class="profil">
+              <h3>Умиджон Ишмухаммедов</h3>
+              <img src="/assets/icons/shadow.png" alt="" class="shadow">
+              <img src="/assets/images/spiker1.jpg" alt="portret" />
+            </div>
+            <div class="logo">
+              <img src="/assets/images/eduaction.jpg" alt="company">
+            </div>
+          </div>
+
+          <div class="spikers-item">
+            <div class="profil">
+              <h3></h3>
+              <img src="/assets/icons/shadow.png" alt="" class="shadow">
+              <img src="/assets/icons/user.png" alt="portret" />
+            </div>
+            <div class="logo">
+              <!-- <img src="" alt="company"> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="spiker-bottom">
+          <h2 id="forForum">Форум учун спикер таклиф қилишни истайсизми?</h2>
+          <p id="auditoria">
+            Биз аудитория қизиқишларини ўрганишга доим тайёрмиз. Ўзингиз форумда
+            кўриши истаган спикерни таклиф этинг.
+          </p>
+          <button type="button" id="inviteSpiker">Спикер таклиф қилиш</button>
+        </div>
+      </div>
+    </div>
+    <!-- Spiker finished -->
+
+    <!-- statistic started -->
+    <div class="event">
+      <img src="/assets/icons/ellips1.png" alt="ellips1" class="ellips1" />
+      <img src="/assets/icons/ellips2.png" alt="ellips2" class="ellips2" />
+      <div class="container">
+        <h1 id="event"><span>2 кун</span> эсдан чиқмайдиган тадбир</h1>
+        <div class="cards">
+          <div class="card">
+            <h2 id="experince" class="card-number">Тажриба</h2>
+            <p id="doExperience">
+              Спикерлар ўз бизнесларида энг катта эффект берган инструментларини
+              ўз бизнесингизда қўлланг
+            </p>
+          </div>
+          <div class="card">
+            <h2 class="card-number">Мотивация</h2>
+            <p id="max">Максимал даражада мотивация олиб кетинг</p>
+          </div>
+          <div class="card">
+            <h2 class="card-number">Энергия</h2>
+            <p id="everySpeaker">
+              Хар бир спикер сизни олдинга интилишга ундайди
+            </p>
+          </div>
+        </div>
+        <form>
+          <button id="buyTicketThree" type="button">Чипта ҳарид қилиш</button>
+        </form>
+      </div>
+    </div>
+    <!-- statistic finished -->
+
+    <!-- Trend started -->
+    <div class="trend">
+      <img src="/assets/icons/blobs.png" alt="blobs" class="element1" />
+      <img src="/assets/icons/blobs2.png " alt="blobs" class="element2" />
+      <div class="container">
+        <h1 id="trend">
+          <span>2022-2023</span> йилда бизнес <span>трендлар</span> хақида
+          биринчи бўлиб билиб олинг
+        </h1>
+        <p id="worldChange">
+          Дунёдаги барча ўзгаришларни биринчи бўлиб бизнесизда қўлланг ва
+          конкурентларингиздан олдинда бўлинг
+        </p>
+        <div class="trend-part">
+          <div class="trend-left">
+            <ul>
+              <li><span></span> Реклама</li>
+              <li>
+                <span></span>
+                <div id="sale">Сотув</div>
+              </li>
+              <li>
+                <span></span>
+                <div id="system">Системалаштириш</div>
+              </li>
+              <li>
+                <span></span>
+                <div id="automat">Автоматлаштириш</div>
+              </li>
+            </ul>
+          </div>
+          <div class="trend-right">
+            <ul>
+              <li>
+                <span></span>
+                <div id="financial">Молия</div>
+              </li>
+              <li>
+                <span></span>
+                <div id="management">Бошқарув</div>
+              </li>
+              <li><span></span> Стратегия</li>
+              <li><span></span> HR</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Trend finished -->
+
+    <!-- Partner started -->
+    <div class="partner">
+      <img src="/assets/icons/partner1.png" alt="ellips1" class="ellips1" />
+      <img src="/assets/icons/partner2.png" alt="ellips2" class="ellips2" />
+      <div class="container">
+        <h1 id="sponpart">Хомийлар ва хамкор</h1>
+        <div class="sponsor">
+          <h2 id="mainSponsor">Бош ҳомий</h2>
+          <div class="wrapper">
+            <div id="sponsor">1</div>
+          </div>
+
+          <h2 id="formalSponsor">Расмий ҳомий</h2>
+          <div class="wrapper">
+            <div id="sponsor">2</div>
+            <div id="sponsor">3</div>
+          </div>
+
+          <h2 id="mediaPartner">Медиаҳамкор</h2>
+          <div class="wrapper">
+            <div id="sponsor">4</div>
+            <div id="sponsor">5</div>
+            <div id="sponsor">6</div>
+          </div>
+
+          <h2 id="partner">Ҳамкорлар</h2>
+          <div class="wrapper">
+            <div id="sponsor" style="padding: 5px">
+              <img src="/assets/images/unical.png" style="width: 80%" alt="" />
+            </div>
+            <div id="sponsor" style="padding: 5px">
+              <img
+                src="/assets/images/regprint.png"
+                style="width: 100%"
+                alt=""
+              />
+            </div>
+            <div id="sponsor" style="padding: 5px">
+              <img
+                src="/assets/images/oson_sot.png"
+                style="width: 100%"
+                alt=""
+              />
+            </div>
+            <div id="sponsor" style="padding: 5px">
+              <img
+                src="/assets/images/registon_logo.png"
+                style="width: 100%"
+                alt=""
+              />
+            </div>
+            <div id="sponsor" style="padding: 5px">
+              <img
+                src="/assets/images/it_school.png"
+                style="width: 100%"
+                alt=""
+              />
+            </div>
+            <div id="sponsor" style="padding: 5px">
+              <img
+                src="/assets/images/regbooks.svg"
+                style="width: 100%"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <button id="bePartner" type="button">Ҳомий бўлиш</button>
+      </div>
+    </div>
+    <!-- Partner finished -->
+
+    <!-- Price started -->
+    <div class="price">
+      <div class="container">
+        <h1 id="priceTicket">ЧИПТА НАРХЛАРИ</h1>
+        <div class="cards">
+          <div class="card">
+            <div id="staff" class="card-header">Ходим</div>
+            <div class="card-body">
+              <ul>
+                <li>
+                  <span></span>
+                  <p id="twoDay">2 кун</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="twoFloor">2-қаватда жой</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">40$</div>
+          </div>
+          <div class="card">
+            <div id="manager" class="card-header">Бошқарувчи</div>
+            <div class="card-body">
+              <ul>
+                <li>
+                  <span></span>
+                  <p id="twoday">2 кун</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="oneFloor">1-қаватда жой</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="material">Тарқатма материаллар</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">80$</div>
+          </div>
+          <div class="card">
+            <div id="biznesmen" class="card-header">Тадбиркор</div>
+            <div class="card-body">
+              <ul>
+                <li>
+                  <span></span>
+                  <p id="twodays">2 кун</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="scenes">Саҳна олдидаги 2 - 10 қаторлар</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="materials">Тарқатма материаллар</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">200$</div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">Бизнесмен</div>
+            <div class="card-body">
+              <ul>
+                <li>
+                  <span></span>
+                  <p id="twoDays">2 кун</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="scene">Саҳна олдидаги 1 қаторлар</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="materialt">Тарқатма материаллар</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="banket">Тадбирдан сўнг БАНКЕТ</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">400$</div>
+          </div>
+        </div>
+        <button id="cheapTicket">1 чипта олинг 2 сини совға қиламиз</button>
+      </div>
+    </div>
+    <!-- Price finished -->
+
+    <!-- map started -->
+    <div class="map">
+      <iframe
+        height="600"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11988.203930759972!2d69.2521083!3d41.3077545!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d44d4e8afe5d8aa!2z0KXRg9C80L4g0JDRgNC10L3QsA!5e0!3m2!1sru!2s!4v1647633394486!5m2!1sru!2s"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      >
+      </iframe>
+      <div class="wrapper">
+        <div class="border"></div>
+        <div class="card">
+          <p id="where">Қаерда бўлади ?</p>
+          <div class="date">
+            <div>
+              <img src="/assets/icons/calendar.svg" alt="" />
+              <p id="thatDays">1-2 июнь</p>
+            </div>
+            <div>
+              <img src="/assets/icons/map-marker.svg" alt="" />
+             <p id="locations"> Humo Arena, Ташкент</p>
+            </div>
+          </div>
+          <p id="question">Савол ва таклифлар учун рақам</p>
+          <p>
+            <img src="/assets/icons/phone.svg" alt="" />
+            +998-78-1-222-222
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- map finished -->
+
+    <div class="top-footer">
+      <img src="/assets/icons/stat1.png" alt="stat1" class="stat1" />
+      <img src="/assets/icons/stat2.png" alt="stat2" class="stat2" />
+      <img src="/assets/icons/ellips1.png" alt="ellips1" class="ellips1" />
+      <img src="/assets/icons/ellips2.png" alt="ellips2" class="ellips2" />
+      <div class="container">
+        <h1 id="join">
+          <span>Акцияда иштирок этинг </span>
+          1 та чипта сотиб олинг <span>2 чисини совға </span> қиламиз
+        </h1>
+        <button type="button" id="cheapTicketTwo">
+          2 та 1 нархда харид қилиш
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-part">
+          <div class="part1">
+            <div class="logo">МЕГАТРЕНИНГ <span>22</span></div>
+            <p>ООО “PERFECTMALL INTERNATIONAL”</p>
+            <div class="media">
+              <a href=""><img src="/assets/icons/facebook.svg" alt="" /></a>
+              <a href=""><img src="/assets/icons/instagram.svg" alt="" /></a>
+              <a href=""><img src="/assets/icons/youtube.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="part2">
+            <h3>ООО “PERFECTMALL INTERNATIONAL</h3>
+            <div class="links">
+              <div class="link">
+                <p><a id="footMain" href="#">Асосий</a></p>
+                <p><a id="footSpeaker" href="#">Спикерлар</a></p>
+              </div>
+              <div class="link2">
+                <p><a id="footPartner" href="#">Ҳамкор бўлиш</a></p>
+                <p><a id="footInvite" href="#">Спикер таклиф қилиш</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="part3">
+            <h3 id="link">Боғланиш</h3>
+            <p>+998-78-1-222-222</p>
+          </div>
+        </div>
+        <hr />
+        <p>© Мегатренинг. Барча ҳуқуқлар ҳимояланган.</p>
+      </div>
+    </footer>
+
+    <script src="assets/index.js"></script>
+  </body>
+</html>
