@@ -320,6 +320,7 @@
   }
   .main .form form .type img {
     right: 5px !important;
+    bottom: 16px !important;
   }
   .main .payment .wrapper {
     width: 90% !important;
