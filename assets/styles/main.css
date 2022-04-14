@@ -551,6 +551,7 @@ header {
   font-family: sfProRegular;
   color: #fff;
   margin: 16px auto;
+  font-size: 22px;
 }
 .main .payment .display {
   background-color: #c4c4c4;
@@ -598,7 +599,7 @@ header {
 }
 .main .payment .bussiness .example .result {
   margin-top: 8px;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 130%;
   color: #242424;
   margin-left: 24px;
@@ -610,7 +611,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.main .payment .final h1 {
+.main .payment .final h1, .main .payment .final .res {
   font-size: 24px;
 }
 .main .form {
