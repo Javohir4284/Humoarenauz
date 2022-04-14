@@ -438,6 +438,21 @@
   }
 
   .main {
+    .form{
+      h1{
+        padding: 0 24px !important;
+        font-size: 24px;
+      }
+
+      form{
+        .type{
+          img{
+            right: 5px !important;
+          }
+        }
+      }
+    }
+
     .payment {
       .wrapper {
         width: 90% !important;
