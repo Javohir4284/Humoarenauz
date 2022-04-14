@@ -32,6 +32,11 @@ var iconCancel = document.getElementById("cancel");
 var lastBtn = document.getElementById("lastbtn");
 var payment = document.getElementById("payment");
 var pay = document.getElementById("pay");
+var buyTicketTwo = document.getElementById("buyTicketTwo");
+var buyTicket = document.getElementById("buyTicket");
+var buyTicketThree = document.getElementById("buyTicketThree");
+var cheapTicket = document.getElementById("cheapTicket");
+var cheapTicketTwo = document.getElementById("cheapTicketTwo");
 
 bronBtn.addEventListener("click", () => {
   form.style.display = "block";
@@ -51,6 +56,27 @@ pay.addEventListener("click", (e) => {
   e.preventDefault();
   form.style.display = "none";
   payment.style.display = "flex";
+});
+
+buyTicketTwo.addEventListener("click", (e) => {
+  e.preventDefault();
+  form.style.display = "block";
+});
+buyTicket.addEventListener("click", (e) => {
+  e.preventDefault();
+  form.style.display = "block";
+});
+buyTicketThree.addEventListener("click", (e) => {
+  e.preventDefault();
+  form.style.display = "block";
+});
+cheapTicket.addEventListener("click", (e) => {
+  e.preventDefault();
+  form.style.display = "block";
+});
+cheapTicketTwo.addEventListener("click", (e) => {
+  e.preventDefault();
+  form.style.display = "block";
 });
 
 var counter = document.getElementById("counter");
@@ -97,14 +123,17 @@ function drawBiznes(personList) {
         <h1>${i.job}</h1>
                 <div class="example">
                   <div class="counter">
-                    <button onclick="changeBtn(inc, ${i.id
-      })" id="inc">-</button>
+                    <button onclick="changeBtn(inc, ${
+                      i.id
+                    })" id="inc">-</button>
                     <span id=${i.id} >${i.count}</span>
-                    <button onclick="changeBtn(dec, ${i.id
-      })" id="dec" >+</button>
+                    <button onclick="changeBtn(dec, ${
+                      i.id
+                    })" id="dec" >+</button>
                   </div>
-                  <div class="result" id=result${i.id}>${i.price === 0 ? "" : i.price + " $"
-      }</div>
+                  <div class="result" id=result${i.id}>${
+      i.price === 0 ? "" : i.price + " $"
+    }</div>
                 </div>
                 </div>
         `;
@@ -132,14 +161,14 @@ function changeBtn(e, id) {
           e[index].id === "inc" && item.count > 0
             ? item.count - 1
             : e[index].id === "dec"
-              ? item.count + 1
-              : 0,
+            ? item.count + 1
+            : 0,
         price:
           (e[index].id === "inc" && item.count > 0
             ? item.count - 1
             : e[index].id === "dec"
-              ? item.count + 1
-              : 0) * item.defaultPrice,
+            ? item.count + 1
+            : 0) * item.defaultPrice,
       };
     } else {
       return item;
@@ -148,4 +177,3 @@ function changeBtn(e, id) {
   drawBiznes(person);
   totalPrice(person);
 }
-

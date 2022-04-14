@@ -33,6 +33,17 @@ $textColor: #242424;
   padding: 0;
   box-sizing: border-box;
   font-family: sfProRegular;
+  ::-webkit-scrollbar {
+    width: 5px !important;
+    cursor: pointer;
+  }
+  ::-webkit-scrollbar-track {
+    background: #edf1ff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $primaryColor;
+    border-radius: 10px !important;
+  }
 }
 
 header {
@@ -85,6 +96,10 @@ header {
     }
     img {
       margin-left: 50px;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
     }
   }
 
@@ -361,7 +376,7 @@ header {
       border-right: 2px solid rgba(0, 180, 191, 0.2);
       padding: 22px;
       width: 60%;
-     
+
       h4 {
         font-size: 20px;
         margin-top: 4px;
@@ -558,13 +573,14 @@ header {
     &-item:nth-child(3) {
       .logo {
         img {
-          filter: invert(16%) sepia(57%) saturate(7084%) hue-rotate(357deg) brightness(98%) contrast(117%);
+          filter: invert(16%) sepia(57%) saturate(7084%) hue-rotate(357deg)
+            brightness(98%) contrast(117%);
         }
       }
     }
-  
-    &-item:nth-child(1), 
-      &-item:nth-child(4) {
+
+    &-item:nth-child(1),
+    &-item:nth-child(4) {
       .logo {
         img {
           filter: brightness(0) invert(1);
@@ -979,19 +995,23 @@ header {
         line-height: 130%;
         display: flex;
         align-items: center;
-        
+
         i {
           color: $primaryColor;
         }
       }
-      
-      .date{
+
+      .date {
         margin-bottom: 20px;
-        div{
+        div {
           margin-top: 20px;
           display: flex;
           align-items: center;
         }
+      }
+      a {
+        text-decoration: none;
+        color: #000;
       }
     }
   }
@@ -1125,6 +1145,10 @@ header {
       p {
         font-size: 14px;
         margin-bottom: 12px;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
       }
     }
   }
